@@ -1,0 +1,7304 @@
+{
+  "db_id": "MONDIAL_GPT",
+  "schema": null,
+  "tables": {
+    "countryothername": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "othername": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_islandin": {
+      "fields": {
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Chongming",
+            "Manhattan",
+            "Svalbard",
+            "Ireland",
+            "Benbecula"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Norwegian Sea",
+            "Greenland Sea",
+            "Barents Sea",
+            "Irish Sea"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Huron",
+            "Lake Nicaragua",
+            "Ozero Baikal",
+            "Lake Manicouagan"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Yangtze",
+            "Hudson River",
+            "Donau",
+            "Saint Lawrence River"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Chongming",
+            "Manhattan",
+            "Svalbard",
+            "Ireland",
+            "Benbecula"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_island": {
+      "fields": {
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Sumatra",
+            "Honshu",
+            "Unalaska",
+            "Unimak",
+            "Tutuila"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RI",
+            "J",
+            "USA",
+            "AMSA",
+            "IND"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aceh",
+            "Aichi",
+            "Akita",
+            "Alaska",
+            "American Samoa"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_provinceothername": {
+      "fields": {
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Liï¿½ge",
+            "San Andrï¿½s, Providencia y Santa Catalina",
+            "Catalunya",
+            "Euskadi",
+            "Afar"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "B",
+            "CO",
+            "E",
+            "ETH",
+            "IL"
+          ]
+        },
+        "othername": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Luik",
+            "San Andres y Providencia",
+            "Catalonia",
+            "Cataluï¿½a",
+            "Paï¿½s Vasco"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Luik",
+            "San Andres y Providencia",
+            "Catalonia",
+            "Cataluï¿½a",
+            "Paï¿½s Vasco"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "teste_funcionario": {
+      "fields": {
+        "idfuncionario": {
+          "type": "INTEGER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "nome": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Joï¿½o Silva",
+            "Maria Santos",
+            "Carlos Oliveira"
+          ]
+        },
+        "cargo": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Gerente de Vendas",
+            "Analista de Marketing",
+            "Tï¿½cnico de Suporte"
+          ]
+        },
+        "datacontratacao": {
+          "type": "DATE",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2020-05-15 00:00:00"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mergeswith": {
+      "fields": {
+        "sea1": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Andaman Sea",
+            "Arabian Sea",
+            "Arafura Sea",
+            "Arctic Ocean",
+            "Atlantic Ocean"
+          ]
+        },
+        "sea2": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Gulf of Bengal",
+            "Indian Ocean",
+            "Malakka Strait",
+            "Gulf of Aden",
+            "Gulf of Oman"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mountain": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aconcagua",
+            "Aenos",
+            "Agung",
+            "Alam Kuh",
+            "Alpamayo"
+          ]
+        },
+        "mountains": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Brazilian Highlands",
+            "Serra do Mar",
+            "Scandinavian Mountains",
+            "Grampians"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1017.0",
+            "2335.0",
+            "2791.0",
+            "2892.0",
+            "2316.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(10)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "volcanic",
+            "volcano",
+            "monolith",
+            "granite"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "organization": {
+      "fields": {
+        "abbreviation": {
+          "type": "VARCHAR(12)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ABEDA",
+            "ACP",
+            "ADB",
+            "AFESD",
+            "AG"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ASEAN Regional Forum",
+            "African Development Bank Group",
+            "African Union",
+            "African Union/United Nations Hybrid Operation in Darfur",
+            "African, Caribbean, and Pacific Group of States"
+          ]
+        },
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Caracas",
+            "Montevideo",
+            "Al Qahirah",
+            "Washington",
+            "Jakarta"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "YV",
+            "ROU",
+            "ET",
+            "USA",
+            "RI"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Distrito Federal",
+            "Uruguay",
+            "Egypt",
+            "District of Columbia",
+            "DKI Jakarta"
+          ]
+        },
+        "established": {
+          "type": "DATE",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1975-10-17 00:00:00"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_desert": {
+      "fields": {
+        "desert": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Erg Maqteir",
+            "Erg Ouarane",
+            "Trarza",
+            "Dascht-e-Margoh",
+            "Rigestan"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RIM",
+            "AFG",
+            "RN",
+            "TM",
+            "KAZ"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Adrar",
+            "Afghanistan",
+            "Agadez",
+            "Akhal",
+            "Aktobe"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Erg Maqteir",
+            "Erg Ouarane",
+            "Trarza",
+            "Dascht-e-Margoh",
+            "Rigestan"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "locatedon": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Ajaccio",
+            "Ambon",
+            "Basildon",
+            "Batam",
+            "Bournemouth"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Scotland",
+            "Pitcairn",
+            "Corse",
+            "Akita",
+            "Iceland"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "GB",
+            "PITC",
+            "F",
+            "J",
+            "IS"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Great Britain",
+            "Pitcairn",
+            "Corse",
+            "Honshu",
+            "Iceland"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "islandin": {
+      "fields": {
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Isle of Man",
+            "Anglesey",
+            "Isle of Wight",
+            "Guernsey",
+            "Jersey"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Irish Sea",
+            "The Channel",
+            "Baltic Sea",
+            "Kattegat",
+            "North Sea"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Victoria",
+            "Koltsevoye Lake",
+            "Ozero Baikal",
+            "Lake Taal"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Donau",
+            "Waag",
+            "Save",
+            "Zambezi"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_locatedon": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Labuan",
+            "Ajaccio",
+            "Ambon",
+            "Basildon",
+            "Batam"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "La Habana",
+            "Labuan",
+            "Cyprus",
+            "Canarias",
+            "Metro Manila"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "C",
+            "MAL",
+            "CY",
+            "E",
+            "RP"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cuba",
+            "Labuan",
+            "Cyprus",
+            "Gran Canaria",
+            "Luzon"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Labuan",
+            "Ajaccio",
+            "Ambon",
+            "Basildon",
+            "Batam"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "countrypops": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1869.0",
+            "1910.0",
+            "1934.0",
+            "1951.0",
+            "1961.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "28211.0",
+            "71183.0",
+            "7929048.0",
+            "9896400.0",
+            "56969.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_city": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Neftejugansk",
+            "Salekhard",
+            "Antwerpen",
+            "Gent",
+            "Leuven"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "R",
+            "B",
+            "L",
+            "NL",
+            "BIH"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Amurskaya",
+            "Antwerpen",
+            "Brcko",
+            "Bihor",
+            "Calarasi"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4215.0",
+            "80151.0",
+            "168576.0",
+            "195931.0",
+            "108145.0"
+          ]
+        },
+        "latitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "53.02",
+            "46.97",
+            "61.08",
+            "63.2",
+            "50.83"
+          ]
+        },
+        "longitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "150.8",
+            "72.7",
+            "5.78",
+            "6.1",
+            "4.32"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "50.0",
+            "6.0",
+            "14.0",
+            "113.0",
+            "158.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Neftejugansk",
+            "Salekhard",
+            "Antwerpen",
+            "Gent",
+            "Leuven"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_language": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "WAFU",
+            "RA",
+            "BOL",
+            "BR",
+            "RCH"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "French",
+            "Spanish",
+            "Quechua",
+            "Aymara",
+            "Portuguese"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "10.8",
+            "100.0",
+            "60.7",
+            "21.2",
+            "14.6"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "French",
+            "Spanish",
+            "Quechua",
+            "Aymara",
+            "Portuguese"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_airport": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Dï¿½sseldorf",
+            "Kotoka Intl",
+            "Chios",
+            "Eleftherios Venizelos Intl",
+            "Point Salines Intl"
+          ]
+        },
+        "iatacode": {
+          "type": "VARCHAR(3)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "GWT",
+            "FRA",
+            "NUE",
+            "ACC",
+            "SKG"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "D",
+            "GH",
+            "GBZ",
+            "GR",
+            "GROX"
+          ]
+        },
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Leipzig",
+            "Dï¿½sseldorf",
+            "Accra",
+            "Rhodes",
+            "Saint Peter Port"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Nordrhein-Westfalen",
+            "Guam",
+            "Guinea",
+            "Haiti",
+            "Budapest"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Sylt",
+            "Crete",
+            "Mykonos",
+            "Chios"
+          ]
+        },
+        "latitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "51.289453",
+            "51.132767",
+            "35.339719",
+            "37.435128",
+            "38.343175"
+          ]
+        },
+        "longitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "7.684831",
+            "8.08048",
+            "13.767161",
+            "19.911667",
+            "26.347061"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "16.0",
+            "323.0",
+            "37.0",
+            "4.0",
+            "48.0"
+          ]
+        },
+        "gmtoffset": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1.0",
+            "0.0",
+            "2.0",
+            "-3.0",
+            "-4.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "STR - Stuttgart",
+            "DUS - Dï¿½sseldorf",
+            "IOA - Ioannina",
+            "PTP - Le Raizet",
+            "GUM - Guam Intl"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "country": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+          ]
+        },
+        "code": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "capital": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Charlotte Amalie",
+            "Pago Pago",
+            "Canberra",
+            "Avarua",
+            "Suva"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Virgin Islands",
+            "American Samoa",
+            "Australia Capital Territory",
+            "Cook Islands",
+            "Fiji"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "352.0",
+            "199.0",
+            "7692024.0",
+            "240.0",
+            "18270.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "106405.0",
+            "55519.0",
+            "23135281.0",
+            "17794.0",
+            "884887.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_lake": {
+      "fields": {
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Kossou",
+            "Barrage de Mbakaou",
+            "Lake Abbe",
+            "Lake Genezareth",
+            "Lake Nicaragua"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CI",
+            "CAM",
+            "ETH",
+            "SYR",
+            "CR"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Abidjan",
+            "Adamaoua",
+            "Afar",
+            "Al Qunaytirah",
+            "Alajuela"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "riveronisland": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Agus River",
+            "Asahan",
+            "Bann",
+            "Barito",
+            "Batang Hari"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Mindanao",
+            "Sumatra",
+            "Ireland",
+            "Borneo",
+            "Te Waka-a-Maui (South Island)"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "city": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Abengourou",
+            "Abu Dhabi",
+            "Abuja",
+            "Acapulco",
+            "Acarigua"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "NL",
+            "E",
+            "D",
+            "CH",
+            "WAN"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Nordrhein-Westfalen",
+            "Abuja",
+            "Al Ladhiqiyah",
+            "Al Qunaytirah",
+            "Amasya"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "108145.0",
+            "123440.0",
+            "196244.0",
+            "331796.0",
+            "196367.0"
+          ]
+        },
+        "latitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "52.37",
+            "51.85",
+            "51.92",
+            "51.0",
+            "43.33"
+          ]
+        },
+        "longitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "5.78",
+            "6.1",
+            "4.32",
+            "5.08",
+            "4.78"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "6.0",
+            "14.0",
+            "113.0",
+            "158.0",
+            "50.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_mountain": {
+      "fields": {
+        "mountain": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cerro Tristeza",
+            "Fuyul Sojol",
+            "Doddabetta",
+            "Myinmoletkat Taung",
+            "Chappal Waddi"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CL",
+            "A",
+            "GR",
+            "YV",
+            "CAM"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Tabouk",
+            "Thailand",
+            "Valais",
+            "Victoria",
+            "Wales"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cerro Tristeza",
+            "Fuyul Sojol",
+            "Doddabetta",
+            "Myinmoletkat Taung",
+            "Chappal Waddi"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_source": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Pearl River",
+            "Xiang Jiang",
+            "Mondego",
+            "Rio Dulce",
+            "Rio Grijalva"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CN",
+            "P",
+            "GCA",
+            "CO",
+            "RG"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Guangdong",
+            "Guangxi",
+            "Guarda",
+            "Guatemala",
+            "Guaviare"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Tone",
+            "Rio Magdalena",
+            "Maranon",
+            "Weiï¿½e Elster",
+            "Rio Desaguadero"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "cityothername": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Ngiva",
+            "Sumgayit",
+            "Antwerpen",
+            "Gent",
+            "Leuven"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AL",
+            "ANG",
+            "AZ",
+            "B"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Wien",
+            "Albania",
+            "Cunene",
+            "Azerbaijan",
+            "Antwerpen"
+          ]
+        },
+        "othername": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Antwerp",
+            "Moji Guacu",
+            "Kotte",
+            "Las Palmas",
+            "L'Hospitalet de Llobregat"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "lakeonisland": {
+      "fields": {
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Arresï¿½",
+            "Danau Kumbang",
+            "Koltsevoye Lake",
+            "Laguna de Bay",
+            "Lake Biwa"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Seeland",
+            "Sumatra",
+            "Onekotan",
+            "Luzon",
+            "Honshu"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "provincelocalname": {
+      "fields": {
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Barisal",
+            "Chittagong",
+            "Dhaka",
+            "Khulna",
+            "Mymensingh"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "BD",
+            "BY",
+            "CN",
+            "GR",
+            "IL"
+          ]
+        },
+        "localname": {
+          "type": "VARCHAR(300)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "countrylocalname": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AND",
+            "ARM"
+          ]
+        },
+        "localname": {
+          "type": "VARCHAR(300)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Republiek Suriname (de)",
+            "the Republic of Namibia",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",
+            "la Rï¿½publique gabonaise",
+            "la Rï¿½publique de Guinï¿½e"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "river": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Acre",
+            "Adda",
+            "Agus River",
+            "Aliakmonas"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Rio Usumacinta",
+            "Rio Magdalena",
+            "Orinoco",
+            "Amazonas"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Represa de Ilha Solteira",
+            "Poopo",
+            "Chad Lake",
+            "Lake No"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Yellow Sea",
+            "Pacific Ocean",
+            "Gulf of Mexico",
+            "Caribbean Sea"
+          ]
+        },
+        "length": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4845.0",
+            "965.0",
+            "1000.0",
+            "480.0",
+            "43.0"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "752000.0",
+            "240000.0",
+            "134400.0",
+            "3435.0"
+          ]
+        },
+        "source": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "mountains": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kunlun",
+            "Sierra Madre de Chiapas",
+            "Cordillera Occidental",
+            "Andes"
+          ]
+        },
+        "sourceelevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4500.0",
+            "2600.0",
+            "2140.0",
+            "2200.0",
+            "1.5"
+          ]
+        },
+        "estuary": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "estuaryelevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "0.0",
+            "0.5",
+            "15.0",
+            "260.0",
+            "37.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "island": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Porto Santo",
+            "Sao Miguel",
+            "Hispaniola",
+            "Puerto Rico",
+            "Tortola"
+          ]
+        },
+        "islands": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Madeira",
+            "Azores",
+            "Greater Antilles",
+            "Lesser Antilles",
+            "Cayman Islands"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "42.0",
+            "747.0",
+            "76192.0",
+            "8870.0",
+            "55.0"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "517.0",
+            "1105.0",
+            "3098.0",
+            "1338.0",
+            "521.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(15)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "volcanic",
+            "lime",
+            "coral",
+            "atoll"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_riverthrough": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Adda",
+            "Alz",
+            "Ammer",
+            "Angara"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Brienzersee",
+            "Thunersee",
+            "Lago di Como",
+            "Chiemsee",
+            "Ammersee"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Adda",
+            "Alz",
+            "Ammer",
+            "Angara"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "ismember": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "organization": {
+          "type": "VARCHAR(12)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ADB",
+            "AG",
+            "AfDB",
+            "BIS",
+            "BSEC"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(60)",
+          "primary_key": false,
+          "nullable": true,
+          "default": "'member'\n   ",
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "member",
+            "observer",
+            "associate member",
+            "regional member",
+            "nonregional member"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_river": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Inn",
+            "Ilz",
+            "Regen",
+            "Alz",
+            "Salzach"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Donau",
+            "Inn",
+            "Drau",
+            "Theiss",
+            "Argeï¿½"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Skutari",
+            "Dead Sea",
+            "Caspian Sea",
+            "Lake Keban"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Mediterranean Sea",
+            "Persian Gulf",
+            "White Sea",
+            "Barents Sea"
+          ]
+        },
+        "length": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "517.0",
+            "62.0",
+            "125.0",
+            "150.0",
+            "225.0"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "25700.0",
+            "850.0",
+            "2953.0",
+            "2197.0",
+            "6700.0"
+          ]
+        },
+        "source": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "mountains": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Alps",
+            "Bayrischer Wald",
+            "Sudety Mountains",
+            "Beskides",
+            "Carpathians"
+          ]
+        },
+        "sourceelevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2484.0",
+            "1300.0",
+            "875.0",
+            "1797.0",
+            "2300.0"
+          ]
+        },
+        "estuary": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "estuaryelevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "291.0",
+            "325.0",
+            "360.0",
+            "344.0",
+            "245.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Alz",
+            "Waag",
+            "Dï¿½mboviï¿½a",
+            "Murat",
+            "Dnister"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_population": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        "population_growth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "0.3",
+            "0.01",
+            "0.21",
+            "-0.46",
+            "-0.49"
+          ]
+        },
+        "infant_mortality": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "13.19",
+            "4.78",
+            "7.9",
+            "6.16"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_sea": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Atlantic Ocean",
+            "Mediterranean Sea",
+            "Black Sea",
+            "Marmara Sea",
+            "Sea of Azov"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2500000.0",
+            "436000.0",
+            "11350.0",
+            "37600.0"
+          ]
+        },
+        "depth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9219.0",
+            "5267.0",
+            "2211.0",
+            "1355.0",
+            "100.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Atlantic Ocean",
+            "Mediterranean Sea",
+            "Black Sea",
+            "Marmara Sea",
+            "Sea of Azov"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "lake": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Ammersee",
+            "Arresï¿½",
+            "Atlin Lake",
+            "Aydingkol",
+            "Balaton"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Caloosahatchee River",
+            "Tennessee River",
+            "Columbia River",
+            "Truckee River"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1890.0",
+            "648.0",
+            "147.0",
+            "337.0",
+            "53.2"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4.0",
+            "1883.0",
+            "1279.0",
+            "1900.0"
+          ]
+        },
+        "depth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4.0",
+            "594.0",
+            "10.0",
+            "501.0"
+          ]
+        },
+        "height": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "235.0",
+            "216.0",
+            "221.0",
+            "58.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(12)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "dam",
+            "caldera",
+            "saline",
+            "acid"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_island": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Arran",
+            "Isle of Man",
+            "Anglesey",
+            "Isle of Wight",
+            "Guernsey"
+          ]
+        },
+        "islands": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Inner Hebrides",
+            "British Isles",
+            "Channel Islands",
+            "ï¿½land Islands"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "430.0",
+            "588.0",
+            "715.0",
+            "381.0",
+            "194.0"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "874.0",
+            "621.0",
+            "220.0",
+            "241.0",
+            "111.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(10)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "volcanic",
+            "lime",
+            "coral",
+            "atoll"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Arran",
+            "Isle of Man",
+            "Anglesey",
+            "Isle of Wight",
+            "Guernsey"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "population": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "population_growth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "0.3",
+            "0.01",
+            "0.21",
+            "-0.46",
+            "-0.49"
+          ]
+        },
+        "infant_mortality": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "13.19",
+            "4.78",
+            "7.9",
+            "6.16"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_sea": {
+      "fields": {
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Red Sea",
+            "Gulf of Aden",
+            "Gulf of Bengal",
+            "Andaman Sea",
+            "Malakka Strait"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "DJI",
+            "ER",
+            "YE",
+            "SP",
+            "BD"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Somalia",
+            "Odisha",
+            "Thailand",
+            "Melaka",
+            "Negeri Sembilan"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Red Sea",
+            "Gulf of Aden",
+            "Gulf of Bengal",
+            "Andaman Sea",
+            "Malakka Strait"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "desert": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Arabian Desert",
+            "Aralkum",
+            "Atacama",
+            "Baja California Desert",
+            "Chihuahua"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1200000.0",
+            "95000.0",
+            "70000.0",
+            "50000.0",
+            "80000.0"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_citypops": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Solingen",
+            "Ludwigshafen",
+            "Leipzig",
+            "Gera",
+            "Miskolc"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "D",
+            "H",
+            "I",
+            "AL",
+            "GR"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Nordrhein-Westfalen",
+            "Rheinland-Pfalz",
+            "Bï¿½cs-Kiskun",
+            "Komï¿½rom-Esztergom",
+            "Budapest"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1987.0",
+            "2011.0",
+            "1992.0",
+            "2000.0",
+            "1990.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "166865.0",
+            "142365.0",
+            "110708.0",
+            "104009.0",
+            "102902.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Solingen",
+            "Ludwigshafen",
+            "Leipzig",
+            "Gera",
+            "Miskolc"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_encompasses": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        "continent": {
+          "type": "VARCHAR(20)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Europe",
+            "Asia",
+            "Africa",
+            "Australia/Oceania",
+            "America"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "100.0",
+            "25.0",
+            "75.0",
+            "3.0",
+            "97.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_cityothername": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Oporto",
+            "Cusco",
+            "Mardan",
+            "Kasur",
+            "Okara"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "OM",
+            "P",
+            "PA",
+            "PE",
+            "PK"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Oman",
+            "Evora",
+            "Madeira",
+            "Porto",
+            "Santarem"
+          ]
+        },
+        "othername": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ï¿½vora",
+            "Santiago de Veraguas",
+            "Mardan",
+            "Kasur",
+            "Okara"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ï¿½vora",
+            "Santiago de Veraguas",
+            "Mardan",
+            "Kasur",
+            "Okara"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "provinceothername": {
+      "fields": {
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Liï¿½ge",
+            "San Andrï¿½s, Providencia y Santa Catalina",
+            "Catalunya",
+            "Euskadi",
+            "Afar"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "B",
+            "CO",
+            "E",
+            "ETH",
+            "IL"
+          ]
+        },
+        "othername": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Luik",
+            "San Andres y Providencia",
+            "Catalonia",
+            "Cataluï¿½a",
+            "Paï¿½s Vasco"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_politics": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "SMAR",
+            "SBAR",
+            "CO",
+            "PR",
+            "KN"
+          ]
+        },
+        "independence": {
+          "type": "DATE",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2010-07-20 00:00:00"
+          ]
+        },
+        "wasdependent": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "E",
+            "GB",
+            "United Nations",
+            "NZ"
+          ]
+        },
+        "dependent": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "F",
+            "USA",
+            "GB",
+            "NZ"
+          ]
+        },
+        "government": {
+          "type": "VARCHAR(120)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "overseas collectivity of France",
+            "republic; executive branch dominates government structure",
+            "commonwealth",
+            "parliamentary democracy and a Commonwealth realm",
+            "parliamentary representative democracy"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "SMAR",
+            "SBAR",
+            "CO",
+            "PR",
+            "KN"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mountainonisland": {
+      "fields": {
+        "mountain": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aenos",
+            "Agung",
+            "Andringitra",
+            "Asahi-Dake",
+            "Attavyros"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kefallinia",
+            "Bali",
+            "Madagaskar",
+            "Hokkaido",
+            "Rhodos"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_continent": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(20)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Europe",
+            "Asia",
+            "Australia/Oceania",
+            "Africa",
+            "America"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9938000",
+            "44579000",
+            "8600000",
+            "30221000",
+            "42075000"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Europe",
+            "Asia",
+            "Australia/Oceania",
+            "Africa",
+            "America"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_provpops": {
+      "fields": {
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Amurskaya",
+            "Antwerpen",
+            "Brcko",
+            "Bihor",
+            "Calarasi"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "R",
+            "B",
+            "NL",
+            "BIH",
+            "RO"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2013.0",
+            "2014.0",
+            "2010.0",
+            "1990.0",
+            "2000.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "172671.0",
+            "156996.0",
+            "1114042.0",
+            "1597310.0",
+            "1315088.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Amurskaya",
+            "Antwerpen",
+            "Brcko",
+            "Bihor",
+            "Calarasi"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "religion": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "STP",
+            "BERM",
+            "AUS",
+            "AXA",
+            "BS"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Adventist",
+            "African Methodist Episcopal",
+            "Anglican",
+            "Armenian Apostolic",
+            "Bahai"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "58.5",
+            "23.2",
+            "0.9",
+            "85.0",
+            "15.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_mergeswith": {
+      "fields": {
+        "sea1": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Andaman Sea",
+            "Arabian Sea",
+            "Arafura Sea",
+            "Arctic Ocean",
+            "Atlantic Ocean"
+          ]
+        },
+        "sea2": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Gulf of Bengal",
+            "Indian Ocean",
+            "Malakka Strait",
+            "Gulf of Aden",
+            "Gulf of Oman"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "encompasses": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "continent": {
+          "type": "VARCHAR(20)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Europe",
+            "Asia",
+            "America",
+            "Australia/Oceania",
+            "Africa"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "100.0",
+            "25.0",
+            "75.0",
+            "3.0",
+            "97.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_lake": {
+      "fields": {
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lago Albano",
+            "Lago di Bolsena",
+            "Lago di Bracciano",
+            "Ozero Ladoga",
+            "Ozero Onega"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "I",
+            "R",
+            "Z",
+            "CH",
+            "MK"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lazio",
+            "Leningradskaya",
+            "Lombardia",
+            "Luapula",
+            "Luzern"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lago Albano",
+            "Lago di Bolsena",
+            "Lago di Bracciano",
+            "Ozero Ladoga",
+            "Ozero Onega"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_lake": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Natron",
+            "Lake Malawi",
+            "Lake Chilwa",
+            "Lake Mai Ndombe",
+            "Malebo Pool"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Shire",
+            "Fimi",
+            "Zaire",
+            "Zambezi"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1040.0",
+            "29600.0",
+            "687.0",
+            "8200.0",
+            "500.0"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "600.0",
+            "474.0",
+            "300.0",
+            "272.0",
+            "326.0"
+          ]
+        },
+        "depth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2.0",
+            "704.0",
+            "10.0",
+            "32.0"
+          ]
+        },
+        "height": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "235.0",
+            "216.0",
+            "221.0",
+            "58.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(12)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "saline",
+            "dam",
+            "impact",
+            "caldera"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Natron",
+            "Lake Malawi",
+            "Lake Chilwa",
+            "Lake Mai Ndombe",
+            "Malebo Pool"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_river": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Limmat",
+            "Reuss",
+            "Rhein",
+            "Bandama"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CH",
+            "CI",
+            "BR",
+            "WAN",
+            "TR"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Al Qunaytirah",
+            "Amurskaya",
+            "Antwerpen",
+            "Anzoï¿½tegui",
+            "Aquitaine"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_religion": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "UA",
+            "R",
+            "B",
+            "L",
+            "NL"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Christian Orthodox",
+            "Ukrainian Greek Catholic",
+            "Roman Catholic",
+            "Protestant",
+            "Jewish"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "83.5",
+            "8.0",
+            "2.2",
+            "0.6",
+            "20.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Christian Orthodox",
+            "Ukrainian Greek Catholic",
+            "Roman Catholic",
+            "Protestant",
+            "Jewish"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_country": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Haiti",
+            "El Salvador",
+            "Honduras",
+            "Greenland",
+            "Grenada"
+          ]
+        },
+        "code": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RH",
+            "ES",
+            "HCA",
+            "GROX",
+            "WG"
+          ]
+        },
+        "capital": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Port-au-Prince",
+            "San Salvador",
+            "Tegucigalpa",
+            "Nuuk",
+            "Saint George's"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Haiti",
+            "El Salvador",
+            "Francisco Morazï¿½n",
+            "Greenland",
+            "Grenada"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "27750.0",
+            "21040.0",
+            "112090.0",
+            "2175600.0",
+            "344.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9896400.0",
+            "6290420.0",
+            "8045990.0",
+            "56370.0",
+            "103328.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Haiti",
+            "El Salvador",
+            "Honduras",
+            "Greenland",
+            "Grenada"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "airport": {
+      "fields": {
+        "iatacode": {
+          "type": "VARCHAR(3)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AAE",
+            "AAL",
+            "AAN",
+            "AAR",
+            "ABA"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Wuxu",
+            "Xuzhou Guanyin Airport",
+            "Yushu Batang",
+            "Ganzhou Airport",
+            "Jingdezhen Airport"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CN",
+            "XMAS",
+            "COCO",
+            "CO",
+            "COM"
+          ]
+        },
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Yantai",
+            "Hefei",
+            "Nanyang",
+            "Anqing",
+            "Aksu"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Guangdong",
+            "Xizang",
+            "Qinghai",
+            "Dire Dawa",
+            "Faroe Islands"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Hainan",
+            "Zhoushan",
+            "Christmas Island",
+            "Pulau Panjang"
+          ]
+        },
+        "latitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "39.124353",
+            "22.608267",
+            "37.1871",
+            "18.302897",
+            "26.538522"
+          ]
+        },
+        "longitude": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "123.918131",
+            "118.862025",
+            "105.393",
+            "119.25",
+            "110.358"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "730.0",
+            "44.0",
+            "1895.0",
+            "3.0",
+            "1013.0"
+          ]
+        },
+        "gmtoffset": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "8.0",
+            "7.0",
+            "6.5",
+            "-5.0",
+            "3.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "language": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AFG",
+            "NAM",
+            "AL",
+            "I",
+            "KOS"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Afghan Persian",
+            "Afrikaans",
+            "Albanian",
+            "Amerindian",
+            "Arabic"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "98.8",
+            "0.5",
+            "99.0",
+            "66.5",
+            "25.1"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_ethnicgroup": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ZW",
+            "BI",
+            "RWA",
+            "EAT",
+            "CAM"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Shona",
+            "Ndebele",
+            "Chewa/Nyanja",
+            "Tonga",
+            "European"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "70.0",
+            "20.0",
+            "6.0",
+            "3.0",
+            "0.2"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(200)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Shona",
+            "Ndebele",
+            "Chewa/Nyanja",
+            "Tonga",
+            "European"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_organization": {
+      "fields": {
+        "abbreviation": {
+          "type": "VARCHAR(12)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CAEU",
+            "SELEC",
+            "CE",
+            "CBSS",
+            "Entente"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Council of Arab Economic Unity",
+            "Convention of the Southeast European Law Enforcement Center",
+            "Council of Europe",
+            "Council of the Baltic Sea States",
+            "Council of the Entente"
+          ]
+        },
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Amman",
+            "Bucuresti",
+            "Strasbourg",
+            "Abidjan"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "JOR",
+            "RO",
+            "F",
+            "CI"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Jordan",
+            "Bucuresti",
+            "Alsace",
+            "Abidjan"
+          ]
+        },
+        "established": {
+          "type": "DATE",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1957-06-02 00:00:00"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Council of Arab Economic Unity",
+            "Convention of the Southeast European Law Enforcement Center",
+            "Council of Europe",
+            "Council of the Baltic Sea States",
+            "Council of the Entente"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_economy": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "TCH",
+            "GQ",
+            "G",
+            "CV",
+            "SUD"
+          ]
+        },
+        "gdp": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "13590.0",
+            "17080.0",
+            "19970.0",
+            "1955.0",
+            "52500.0"
+          ]
+        },
+        "agriculture": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "46.3",
+            "4.6",
+            "3.6",
+            "9.3",
+            "27.4"
+          ]
+        },
+        "service": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "43.8",
+            "8.1",
+            "32.5",
+            "71.9",
+            "39.0"
+          ]
+        },
+        "industry": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9.9",
+            "87.3",
+            "63.9",
+            "18.8",
+            "33.6"
+          ]
+        },
+        "inflation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "4.5",
+            "6.0",
+            "1.2",
+            "1.9",
+            "25.0"
+          ]
+        },
+        "unemployment": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "22.3",
+            "21.0",
+            "20.0",
+            "85.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "TCH",
+            "GQ",
+            "G",
+            "CV",
+            "SUD"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_mountain": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Saltoro Kangri",
+            "Nanda Devi",
+            "Annapurna",
+            "Myinmoletkat Taung",
+            "Ngï¿½c Linh"
+          ]
+        },
+        "mountains": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Karakorum",
+            "Himalaya",
+            "Transhimalaya",
+            "Kunlun",
+            "Altyn-Tagh"
+          ]
+        },
+        "elevation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "7795.0",
+            "8611.0",
+            "8051.0",
+            "8080.0",
+            "8034.0"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(10)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "volcanic",
+            "volcano",
+            "granite",
+            "monolith"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Saltoro Kangri",
+            "Nanda Devi",
+            "Annapurna",
+            "Myinmoletkat Taung",
+            "Ngï¿½c Linh"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_located": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kingstown",
+            "Saipan",
+            "Barra Mansa",
+            "Angra dos Reis",
+            "Parnamirim"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Haiti",
+            "Atlï¿½ntida",
+            "Victoria",
+            "Tuvalu",
+            "Nouakchott"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "USA",
+            "NIC",
+            "PA",
+            "RH",
+            "HCA"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Potomac River",
+            "Murrumbidgee River",
+            "Paraguay",
+            "Tocantins"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Nicaragua",
+            "Lake Burley Griffin",
+            "Lake Mai Ndombe",
+            "Lake Victoria"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Pacific Ocean",
+            "Caribbean Sea",
+            "Atlantic Ocean",
+            "Indian Ocean"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kingstown",
+            "Saipan",
+            "Barra Mansa",
+            "Angra dos Reis",
+            "Parnamirim"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "teste_fornecedor": {
+      "fields": {
+        "idfornecedor": {
+          "type": "INTEGER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "201",
+            "202",
+            "203"
+          ]
+        },
+        "nome": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Fornecedor X",
+            "Fornecedor Y",
+            "Fornecedor Z"
+          ]
+        },
+        "produtofornecido": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Componentes Eletrï¿½nicos",
+            "Materiais de Construï¿½ï¿½o",
+            "Papelaria"
+          ]
+        },
+        "contato": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Ana Silva",
+            "Josï¿½ Santos",
+            "Maria Oliveira"
+          ]
+        },
+        "telefone": {
+          "type": "VARCHAR(15)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "11 1111-1111",
+            "22 2222-2222",
+            "33 3333-3333"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "teste_cliente": {
+      "fields": {
+        "idcliente": {
+          "type": "INTEGER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "101",
+            "102",
+            "103"
+          ]
+        },
+        "nome": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Empresa A",
+            "Cliente B",
+            "Cliente C"
+          ]
+        },
+        "email": {
+          "type": "VARCHAR(100)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "telefone": {
+          "type": "VARCHAR(15)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "11 1234-5678",
+            "21 9876-5432",
+            "31 5555-5555"
+          ]
+        },
+        "idfuncionarioresponsavel": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1",
+            "2"
+          ]
+        },
+        "idfornecedorresponsavel": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "201.0",
+            "202.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_countrypops": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "NIUE",
+            "NORF",
+            "NMIS",
+            "PAL",
+            "PITC"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1966.0",
+            "1971.0",
+            "1976.0",
+            "1981.0",
+            "1986.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "3281.0",
+            "2300.0",
+            "11365.0",
+            "196823.0",
+            "285176.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "NIUE",
+            "NORF",
+            "NMIS",
+            "PAL",
+            "PITC"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_river": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Saskatchewan River",
+            "Mara",
+            "Araguaia",
+            "Rio Parnaiba",
+            "Tocantins"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CDN",
+            "EAT",
+            "BR",
+            "TR",
+            "R"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Mekong River Delta",
+            "Meta",
+            "Michigan",
+            "Minas Gerais",
+            "Muslim Mindanao"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Rio Parnaiba",
+            "Merrimack River",
+            "Parana",
+            "Weichsel",
+            "Donau"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_ismember": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "WAN",
+            "RT",
+            "CI",
+            "GH",
+            "CV"
+          ]
+        },
+        "organization": {
+          "type": "VARCHAR(12)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ECOWAS",
+            "ECO",
+            "EurasEC",
+            "EAPC",
+            "EBRD"
+          ]
+        },
+        "type": {
+          "type": "VARCHAR(60)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "member",
+            "observer",
+            "cooperating state",
+            "candidate",
+            "members decided to leave"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "WAN",
+            "RT",
+            "CI",
+            "GH",
+            "CV"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "province": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Abuja",
+            "Al Ladhiqiyah",
+            "Al Qunaytirah",
+            "Amasya",
+            "Amurskaya"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CH",
+            "WAN",
+            "CI",
+            "I",
+            "RI"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1001281.0",
+            "1056955.0",
+            "2097818.0",
+            "2528632.0",
+            "3350350.0"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "20256.0",
+            "685.0",
+            "490.0",
+            "2025.0",
+            "5224.0"
+          ]
+        },
+        "capital": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Potenza",
+            "Palermo",
+            "Banskï¿½ Bystrica",
+            "Koï¿½ice",
+            "Basel"
+          ]
+        },
+        "capprov": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Basilicata",
+            "Sardegna",
+            "Appenzell Ausserrhoden",
+            "Nidwalden",
+            "Obwalden"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_province": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Qinghai",
+            "Xizang",
+            "Esfahan",
+            "Yazd",
+            "Sindh"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CN",
+            "IR",
+            "PK",
+            "TAD",
+            "TM"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "27512800.0",
+            "37640000.0",
+            "36298000.0",
+            "46866000.0",
+            "947763.0"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "187000.0",
+            "488000.0",
+            "101800.0",
+            "82400.0",
+            "37411.0"
+          ]
+        },
+        "capital": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Esfahan",
+            "Yazd",
+            "Karaj",
+            "Birjand",
+            "Qurghonteppa"
+          ]
+        },
+        "capprov": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Qinghai",
+            "Xizang",
+            "Esfahan",
+            "Yazd",
+            "Sindh"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Qinghai",
+            "Xizang",
+            "Esfahan",
+            "Yazd",
+            "Sindh"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_estuary": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Limmat",
+            "Reuss",
+            "Pjandsh",
+            "Lï¿½gen"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CH",
+            "AFG",
+            "N",
+            "BR",
+            "USA"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aargau",
+            "Afghanistan",
+            "Akershus",
+            "Alagoas",
+            "Alaska"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_sea": {
+      "fields": {
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Atlantic Ocean",
+            "Mediterranean Sea",
+            "Andaman Sea",
+            "Indian Ocean",
+            "Malakka Strait"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CI",
+            "I",
+            "RI",
+            "TR",
+            "GR"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Al Ladhiqiyah",
+            "Anguilla",
+            "Anzoï¿½tegui",
+            "Aquitaine",
+            "Arequipa"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "citylocalname": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Mazar-i-Sharif",
+            "Ganja",
+            "Sumgayit",
+            "Brest",
+            "Hefei"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AFG",
+            "ARM",
+            "AZ",
+            "BG",
+            "BRN"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Afghanistan",
+            "Armenia",
+            "Azerbaijan",
+            "Bulgaria",
+            "Bahrain"
+          ]
+        },
+        "localname": {
+          "type": "VARCHAR(300)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+            "Thï¿½i Nguyï¿½n"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_borders": {
+      "fields": {
+        "country1": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL",
+            "GR",
+            "MK",
+            "MNE",
+            "KOS"
+          ]
+        },
+        "country2": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "GR",
+            "MK",
+            "MNE",
+            "KOS",
+            "TR"
+          ]
+        },
+        "length": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "282.0",
+            "151.0",
+            "172.0",
+            "112.0",
+            "228.0"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AL-GR",
+            "AL-MK",
+            "AL-MNE",
+            "AL-KOS",
+            "GR-MK"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "sea": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Andaman Sea",
+            "Arabian Sea",
+            "Arafura Sea",
+            "Arctic Ocean",
+            "Atlantic Ocean"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2500000.0",
+            "436000.0",
+            "11350.0",
+            "37600.0"
+          ]
+        },
+        "depth": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9219.0",
+            "5267.0",
+            "2211.0",
+            "1355.0",
+            "100.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "borders": {
+      "fields": {
+        "country1": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AL",
+            "AND",
+            "ANG"
+          ]
+        },
+        "country2": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "CH",
+            "CZ",
+            "D",
+            "FL",
+            "H"
+          ]
+        },
+        "length": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "282.0",
+            "151.0",
+            "172.0",
+            "112.0",
+            "228.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_island": {
+      "fields": {
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Krk",
+            "Curacao",
+            "Cyprus",
+            "Java",
+            "Mindanao"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "HR",
+            "CUR",
+            "CY",
+            "RI",
+            "RP"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Croatia",
+            "Curacao",
+            "Cyprus",
+            "DI Yogyakarta",
+            "DKI Jakarta"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Krk",
+            "Curacao",
+            "Cyprus",
+            "Java",
+            "Mindanao"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "politics": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "independence": {
+          "type": "DATE",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1962-08-31 00:00:00"
+          ]
+        },
+        "wasdependent": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "GB",
+            "United Nations",
+            "NZ",
+            "F"
+          ]
+        },
+        "dependent": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "GB",
+            "USA",
+            "NZ",
+            "F"
+          ]
+        },
+        "government": {
+          "type": "VARCHAR(120)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "parliamentary democracy",
+            "British Overseas Territories",
+            "organized",
+            "unincorporated and unorganized territory of the US",
+            "federal parliamentary democracy and a Commonwealth realm"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "economy": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AMSA"
+          ]
+        },
+        "gdp": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "12800.0",
+            "243300.0",
+            "10650.0",
+            "43680.0",
+            "4518.0"
+          ]
+        },
+        "agriculture": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "19.5",
+            "3.5",
+            "10.2",
+            "7.9",
+            "0.8"
+          ]
+        },
+        "service": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "68.5",
+            "80.5",
+            "62.3",
+            "60.3",
+            "87.9"
+          ]
+        },
+        "industry": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "12.0",
+            "16.0",
+            "27.5",
+            "31.8",
+            "11.3"
+          ]
+        },
+        "inflation": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1.7",
+            "-0.8",
+            "2.8",
+            "2.2",
+            "4.0"
+          ]
+        },
+        "unemployment": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "16.9",
+            "27.9",
+            "28.6",
+            "20.1",
+            "19.1"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "citypops": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Linz",
+            "Mazar-i-Sharif",
+            "Elbasan",
+            "Newcastle",
+            "Brisbane"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "AFG",
+            "AG",
+            "AL",
+            "AND"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Burgenland",
+            "Niederï¿½sterreich",
+            "Victoria",
+            "Antwerpen",
+            "Brcko"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1981.0",
+            "1991.0",
+            "2001.0",
+            "2010.0",
+            "2013.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "77137.0",
+            "106530.0",
+            "116761.0",
+            "242819.0",
+            "264852.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_desert": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1200000.0",
+            "95000.0",
+            "70000.0",
+            "50000.0",
+            "80000.0"
+          ]
+        },
+        "coordinates": {
+          "type": "NULL",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": []
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_mountain": {
+      "fields": {
+        "mountain": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Chappal Waddi",
+            "Tamgak",
+            "Huascaran",
+            "Licancabur",
+            "Cerro Tristeza"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "I",
+            "WAN",
+            "RI",
+            "CAM",
+            "ETH"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Abuja",
+            "Al Qunaytirah",
+            "Anzoï¿½tegui",
+            "Aquitaine",
+            "Arequipa"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "ethnicgroup": {
+      "fields": {
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "EAU",
+            "RT",
+            "DJI",
+            "ETH",
+            "AND"
+          ]
+        },
+        "name": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Acholi",
+            "Adja",
+            "Afar",
+            "African",
+            "African descent"
+          ]
+        },
+        "percentage": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "95.0",
+            "0.1",
+            "2.0",
+            "85.7",
+            "1.9"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_geo_estuary": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Rï¿½o Colorado",
+            "Iskar",
+            "Luvironza",
+            "Ruzizi",
+            "Selenge"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RA",
+            "BG",
+            "BI",
+            "R",
+            "RCH"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Buenos Aires",
+            "Bulgaria",
+            "Burundi",
+            "Buryatiya",
+            "Bï¿½o-Bï¿½o"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Dï¿½mboviï¿½a",
+            "Feather River",
+            "Kagera",
+            "Tone",
+            "Murat"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "provpops": {
+      "fields": {
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Burgenland",
+            "Niederï¿½sterreich",
+            "Victoria",
+            "Antwerpen",
+            "Brcko"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "A",
+            "ANG",
+            "AUS",
+            "B",
+            "BD"
+          ]
+        },
+        "year": {
+          "type": "NUMBER",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1994.0",
+            "2001.0",
+            "2010.0",
+            "2013.0",
+            "1970.0"
+          ]
+        },
+        "population": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "637460.0",
+            "304343.0",
+            "512727.0",
+            "830371.0",
+            "590459.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_source": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Amudarja",
+            "Helmand",
+            "Pjandsh",
+            "Murat",
+            "Buna"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "AFG",
+            "TR",
+            "AL",
+            "CDN",
+            "DZ"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Afghanistan",
+            "Agri",
+            "Albania",
+            "Alberta",
+            "Algeria"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "riverthrough": {
+      "fields": {
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aare",
+            "Adda",
+            "Alz",
+            "Ammer",
+            "Angara"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Brienzersee",
+            "Thunersee",
+            "Lago di Como",
+            "Chiemsee",
+            "Ammersee"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "geo_desert": {
+      "fields": {
+        "desert": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Erg Maqteir",
+            "Erg Ouarane",
+            "Trarza",
+            "Dascht-e-Margoh",
+            "Rigestan"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RIM",
+            "AFG",
+            "RN",
+            "TM",
+            "KAZ"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Adrar",
+            "Afghanistan",
+            "Agadez",
+            "Akhal",
+            "Aktobe"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "mondial_mountainonisland": {
+      "fields": {
+        "mountain": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aenos",
+            "Agung",
+            "Andringitra",
+            "Asahi-Dake",
+            "Attavyros"
+          ]
+        },
+        "island": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Kefallinia",
+            "Bali",
+            "Madagaskar",
+            "Hokkaido",
+            "Rhodos"
+          ]
+        },
+        "meta_repcol": {
+          "type": "VARCHAR(4000)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Aenos",
+            "Agung",
+            "Andringitra",
+            "Asahi-Dake",
+            "Attavyros"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "continent": {
+      "fields": {
+        "name": {
+          "type": "VARCHAR(20)",
+          "primary_key": true,
+          "nullable": false,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Africa",
+            "America",
+            "Asia",
+            "Australia/Oceania",
+            "Europe"
+          ]
+        },
+        "area": {
+          "type": "NUMBER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9938000",
+            "44579000",
+            "8600000",
+            "30221000",
+            "42075000"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "located": {
+      "fields": {
+        "city": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Calarasi",
+            "Erzincan",
+            "Izmir",
+            "Gebze",
+            "ï¿½orlu"
+          ]
+        },
+        "province": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Calarasi",
+            "Covasna",
+            "Erzincan",
+            "Izmir",
+            "Trabzon"
+          ]
+        },
+        "country": {
+          "type": "VARCHAR(4)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "RO",
+            "TR",
+            "DK",
+            "EW",
+            "FARX"
+          ]
+        },
+        "river": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Dï¿½mboviï¿½a",
+            "Donau",
+            "Olt",
+            "Sereth"
+          ]
+        },
+        "lake": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Lake Van",
+            "Pï¿½ijï¿½nne",
+            "Saimaa",
+            "Oulujï¿½rvi"
+          ]
+        },
+        "sea": {
+          "type": "VARCHAR(50)",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Black Sea",
+            "Mediterranean Sea",
+            "Marmara Sea",
+            "Kattegat"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    }
+  },
+  "foreign_keys": [
+    [
+      "countryothername",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_island",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_island",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_island",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "mergeswith",
+      "sea1",
+      null,
+      "sea",
+      "name"
+    ],
+    [
+      "mergeswith",
+      "sea2",
+      null,
+      "sea",
+      "name"
+    ],
+    [
+      "organization",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "organization",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "organization",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "organization",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "organization",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "organization",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "locatedon",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "locatedon",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "locatedon",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "locatedon",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "locatedon",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "locatedon",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "islandin",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "islandin",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "islandin",
+      "sea",
+      null,
+      "sea",
+      "name"
+    ],
+    [
+      "countrypops",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_lake",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_lake",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "geo_lake",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_lake",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "riveronisland",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "city",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "city",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "city",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "cityothername",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "cityothername",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "cityothername",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "cityothername",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "cityothername",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "cityothername",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "lakeonisland",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "provincelocalname",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "provincelocalname",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "provincelocalname",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "countrylocalname",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "river",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "river",
+      "sea",
+      null,
+      "sea",
+      "name"
+    ],
+    [
+      "ismember",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "ismember",
+      "organization",
+      null,
+      "organization",
+      "abbreviation"
+    ],
+    [
+      "lake",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "population",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "provinceothername",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "provinceothername",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "provinceothername",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "mountainonisland",
+      "mountain",
+      null,
+      "mountain",
+      "name"
+    ],
+    [
+      "religion",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "encompasses",
+      "continent",
+      null,
+      "continent",
+      "name"
+    ],
+    [
+      "encompasses",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_river",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_river",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_river",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_river",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "airport",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "airport",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "airport",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "airport",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "airport",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "airport",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "language",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "teste_cliente",
+      "idfornecedorresponsavel",
+      null,
+      "teste_fornecedor",
+      "idfornecedor"
+    ],
+    [
+      "teste_cliente",
+      "idfuncionarioresponsavel",
+      null,
+      "teste_funcionario",
+      "idfuncionario"
+    ],
+    [
+      "province",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_estuary",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_estuary",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_estuary",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_estuary",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "geo_sea",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_sea",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_sea",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_sea",
+      "sea",
+      null,
+      "sea",
+      "name"
+    ],
+    [
+      "citylocalname",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "citylocalname",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "citylocalname",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "citylocalname",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "citylocalname",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "citylocalname",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "borders",
+      "country1",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "borders",
+      "country2",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "politics",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "economy",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "citypops",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "citypops",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "citypops",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "citypops",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "citypops",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "citypops",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_mountain",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_mountain",
+      "mountain",
+      null,
+      "mountain",
+      "name"
+    ],
+    [
+      "geo_mountain",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_mountain",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "ethnicgroup",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "provpops",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "provpops",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "provpops",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_source",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_source",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_source",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "geo_source",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "riverthrough",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "riverthrough",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "geo_desert",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "geo_desert",
+      "desert",
+      null,
+      "desert",
+      "name"
+    ],
+    [
+      "geo_desert",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "geo_desert",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "located",
+      "city",
+      null,
+      "city",
+      "name"
+    ],
+    [
+      "located",
+      "country",
+      null,
+      "city",
+      "country"
+    ],
+    [
+      "located",
+      "province",
+      null,
+      "city",
+      "province"
+    ],
+    [
+      "located",
+      "country",
+      null,
+      "country",
+      "code"
+    ],
+    [
+      "located",
+      "lake",
+      null,
+      "lake",
+      "name"
+    ],
+    [
+      "located",
+      "province",
+      null,
+      "province",
+      "name"
+    ],
+    [
+      "located",
+      "country",
+      null,
+      "province",
+      "country"
+    ],
+    [
+      "located",
+      "river",
+      null,
+      "river",
+      "name"
+    ],
+    [
+      "located",
+      "sea",
+      null,
+      "sea",
+      "name"
+    ]
+  ]
+}

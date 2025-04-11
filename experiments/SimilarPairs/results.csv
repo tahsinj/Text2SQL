@@ -1,0 +1,2 @@
+,experiment,simple,medium,complex,total,overall_simple,overall_medium,overall_complex,overall_total,input_tokens,output_tokens,total_tokens,total_cost,total_time
+0,SQLQueryChain - MONDIAL_GPT - GPT-3.5,4,8,2,14,0.8,0.6667,0.6667,0.7,124227,508,124735,0.37,0:00:19

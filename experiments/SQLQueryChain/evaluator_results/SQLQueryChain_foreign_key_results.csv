@@ -1,0 +1,5 @@
+,experiment,simple,medium,complex,total,overall_simple,overall_medium,overall_complex,overall_total,input_tokens,output_tokens,total_tokens,total_cost,total_time
+1,SQLQueryChain - MONDIAL_GPT - GPT-4 - Passing database instances - FK,26,28,15,69,0.7879,0.8485,0.4412,0.69,782624,2527,785151,23.63,0:09:20
+2,SQLQueryChain - MONDIAL_GPT - GPT-4 - FK,26,26,16,68,0.7879,0.7879,0.4706,0.68,569713,2643,572356,17.25,0:05:28
+3,SQLQueryChain - MONDIAL_GPT - GPT-3.5 - FK,27,20,12,59,0.8182,0.6061,0.3529,0.59,595825,3642,599467,1.8,0:01:50
+0,SQLQueryChain - MONDIAL_GPT - GPT-3.5 - Passing database instances - FK,24,21,13,58,0.7273,0.6364,0.3824,0.58,811725,2442,814167,2.44,0:02:27
